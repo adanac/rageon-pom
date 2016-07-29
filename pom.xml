@@ -162,12 +162,10 @@
              <dependency>
 				<groupId>com.adanac.framework</groupId>
 				<artifactId>adanac-dac</artifactId>
-				<version>1.0.0</version>
 			</dependency>
              <dependency>
 				<groupId>com.adanac.framework</groupId>
 				<artifactId>adanac-log</artifactId>
-				<version>1.0.0</version>
 			</dependency>
 		<!-- common end -->
 	
@@ -339,6 +337,11 @@
 				<artifactId>jsoup</artifactId>
 				<version>1.7.3</version>
 			</dependency>
+			<dependency>
+				<groupId>com.bn.framework.disconf</groupId>
+				<artifactId>disconf-client</artifactId>
+				<version>1.0.0</version>
+			</dependency>
 	</dependencies>
        <build>
 		<pluginManagement>
@@ -426,7 +429,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin_version}</version>
 				<configuration>
 					<useSystemClassLoader>true</useSystemClassLoader>
 					<forkMode>once</forkMode>
@@ -504,7 +506,6 @@
 			<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>2.10.3</version>
 					<configuration>
 					    <encoding>utf-8</encoding>
 					    <outputEncoding>utf-8</outputEncoding>
